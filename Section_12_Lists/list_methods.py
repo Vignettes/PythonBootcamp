@@ -79,3 +79,27 @@ print(another_list)
 # takes an input such as a list, and joins them, to turn into a string
 words = ['This', 'is', 'fun']
 ' '.join(words) # 'This is fun' joined with the ' '  between each value
+
+
+# Create a list called instructors
+
+instructors = []
+
+# Add the following strings to the instructors list 
+    # "Colt"
+    # "Blue"
+    # "Lisa"
+instructors.append('Colt')
+instructors.append('Blue')                   
+instructors.append('Lisa')
+# Remove the last value in the list
+instructors.pop()
+
+# Remove the first value in the list
+remove = instructors[0]
+instructors.remove(remove)
+
+# Add the string "Done" to the beginning of the list
+instructors.insert(0, 'Done')
+
+# Run the tests to make sure you've done this correctly!
