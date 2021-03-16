@@ -111,3 +111,25 @@ print(initial_game_state)
 d = dict(a=1,b=2,c=3)
 d.pop('a') # removes and returns the valey for a
 print(d) # prints {'b': 2, 'c': 3}
+
+### WARNNG: You cannot use just dictionary.pop() like you can with list.pop() ###
+
+# You can use .popitem()
+print(initial_game_state.popitem())  # Grabs the last key-value and returns it, then removes it from the dictionary.
+
+# We can use update to update keys and  values in a dictionary with another set of key value pairs
+# first = dict(a=1,b=2,c=3,d=4,e=5)
+# second = {}
+# second.update(first)
+# second # prints {'a':1,'b':2,'c':3,'d':4,'e':5}
+# Now if we overwrite an existing key
+# second['a'] = 'AMAZING!'
+# We can use update again and...
+# second.update(first) 
+# second # now returns {'a':1,'b':2,'c':3,'d':4,'e':5} again
+
+person = {
+    "city": "Antigua"
+}
+person.update(initial_game_state) # adds the initial_game_state key values into the dictionary person
+print(person)
