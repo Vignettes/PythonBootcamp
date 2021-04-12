@@ -6,7 +6,7 @@ def rps_game():
     print('...scissors...')
 
     player = input("Rock, paper, or scissors? \n").lower()
-    rand_num = randint(0,2)t
+    rand_num = randint(0,2)
     if rand_num == 0:
         computer = 'rock'
     elif rand_num == 1:
