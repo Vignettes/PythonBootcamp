@@ -54,7 +54,7 @@ interleave('no', 'ee') # 'neoe'
 ### Write a function called 'triple_and_filter'. This function should accept a list of numbers,
 ### filter out every number that is not divisible by 4, and return a new list where every remaining
 ### number is tripled.
-### ex. triple_and_filter([1,2,3,4]) # [12]
+#### ex. triple_and_filter([1,2,3,4]) # [12]
 
 def triple_and_filter(*nums):
     new = [num * 3 for num in nums if num % 4 == 0]
