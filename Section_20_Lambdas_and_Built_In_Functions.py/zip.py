@@ -64,7 +64,7 @@ triple_and_filter(1,5,3,8,10)
 
 # Alternatively
 
-def triple_and_filter(nums):
+def triple_and_filter2(nums):
     return list(num*3 for num in nums if num % 4 == 0)
 
 
