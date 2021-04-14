@@ -33,7 +33,7 @@ final_grades = {t[0]:max(t[1], t[2])for t in zip(students, midterms, finals)}
 print(final_grades) # {'dan': 98, 'ang': 91, 'kate': 78}
 
 
-### Interleaving strings ###
+#### Interleaving strings ###
 ### Write a function called 'interleave' that accepts two strings. It should return a new string
 ### containing the 2 strings interwoven or zipped together. For examples:
 ### interleave('hi, 'ha') # 'hhia'
