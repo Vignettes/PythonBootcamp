@@ -23,7 +23,7 @@ students = ['dan', 'ang', 'kate']
 print(list(zip(midterms, finals, students))) # [(80, 98, 'dan'), (91, 89, 'ang'), (78, 53, 'kate')]
 
 final_grades = [max(pair)for pair in zip(midterms, finals)]
-# new variable is a list with the max value from the pair in the zip of midterms and finals
+## new variable is a list with the max value from the pair in the zip of midterms and finals
 print(final_grades) # [98, 91, 89]
 
 # But you said we needed the names!
