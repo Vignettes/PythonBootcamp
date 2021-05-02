@@ -91,11 +91,12 @@ res = requests.get(
 
 
 num_jokes = res["total_jokes"]
+results = res["results"]
 if num_jokes > 1:
-    print("There are many jokes")
-    print(choice(res['joke']))
+    print(f"There {num_jokes} jokes about {user_input}")
+    print(choice(results)['joke'])
 elif num_jokes == 1:
-    print("there is 1 joke")
-    print(res["results"][0]['joke'])
+    print(f"there is 1 joke about {user_input}")
+    print([results][0]['joke'])
 else:
     print("there are no jokes")
